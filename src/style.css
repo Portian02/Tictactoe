@@ -1,10 +1,15 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.564))  ,url("https://img.freepik.com/vector-gratis/fondo-memphis-semitono-azul-lineas-amarillas-formas-circulos_1017-31954.jpg?w=1060&t=st=1687815646~exp=1687816246~hmac=150518e341eeab34f0769d1cd75d17b2e0f7e7a79e0dd819af185da558dce88c");
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.564)
+    ),
+    url("https://img.freepik.com/vector-gratis/fondo-memphis-semitono-azul-lineas-amarillas-formas-circulos_1017-31954.jpg?w=1060&t=st=1687815646~exp=1687816246~hmac=150518e341eeab34f0769d1cd75d17b2e0f7e7a79e0dd819af185da558dce88c");
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  
+  background-size: cover;
+
   /* background: rgb(0, 0, 0)
     linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(141, 2, 241, 0.564));
   color: white; */
@@ -14,7 +19,27 @@ body {
   place-items: center;
   overflow: hidden;
 }
-h2 {
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: rgba( 59, 6, 69, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 14.5px );
+-webkit-backdrop-filter: blur( 14.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+width: 90vw;
+}
+
+
+#titulo {
+  margin-top: 10px;
+  margin-bottom: 25px;
   font-size: 8vh;
   color: rgb(242, 147, 244);
   text-shadow: 20px 0px 20px rgb(253, 81, 242), 0 0 20px rgb(255, 0, 238);
@@ -23,13 +48,13 @@ span {
   color: rgb(224, 22, 255);
   text-shadow: 20px 0px 20px rgb(254, 7, 217), 0 0 20px rgb(248, 13, 224);
 }
-#Game .cell {
-  width:90px;
+ #Game .cell {
+  width: 90px;
   height: 90px;
   font-size: 6rem;
   display: grid;
+  margin: auto;
   place-items: center;
-
   border: 1px solid rgb(246, 34, 246);
   box-shadow: 0px 0px 20px rgb(203, 7, 213), 0px 0px 20px rgb(102, 0, 128);
   backdrop-filter: blur(4px);
@@ -38,30 +63,34 @@ span {
   float: left;
   color: rgb(247, 117, 117);
   text-shadow: 0px 0px 20px rgb(254, 7, 7), 0 0 20px rgb(255, 0, 0);
-}
-.cell {
   align-content: center;
 }
 
 #Game {
   width: 276px;
   text-align: center;
+ 
 }
 
 #Resultado {
-  position: relative;
+
   top: 10px;
   height: 3rem;
   color: aliceblue;
+  font-size: 6vmin;
 }
-button{
+button {
   color: aliceblue;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 4vmin;
   background: rgba(191, 17, 230, 0.484);
   width: 20vw;
-  height: 4vh;
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 0.5px );
--webkit-backdrop-filter: blur( 0.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  height: 6vh;
+  box-shadow: 0 8px 32px 0 rgba(241, 22, 219, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(235, 17, 242, 0.18);
 }

@@ -1,8 +1,5 @@
 let isPlayerOne = true;
-
 let cells = document.getElementsByClassName("cell");
-
-let ramdomC = Math.floor(Math.random() * 9);
 
 for (let i = 0; i < cells.length; i++) {
   cells[i].addEventListener("click", jugador);
@@ -10,15 +7,8 @@ for (let i = 0; i < cells.length; i++) {
 function jugador(e) {
   let cellvalue = e.target.innerHTML;
   if (!cellvalue.length) {
-    e.target.innerHTML = "X";
-    for (let i = 0; i < cells.length; i++) {
-      cells[i] = cells[ramdomC];
-    }
-
-    setTimeout(() => {
-      cells[ramdomC].innerHTML = "O";
-    }, 2000);
-    isPlayerOne = !isPlayerOne;
+    e.target.innerHTML = "X" 
+   
 
     checkLine(0, 1, 2);
     checkLine(3, 4, 5);
@@ -30,7 +20,6 @@ function jugador(e) {
     checkLine(6, 4, 2);
   }
 }
-
 function checkLine(c1, c2, c3) {
   if (
     cells[c1].innerHTML.length &&
