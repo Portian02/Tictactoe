@@ -18,20 +18,6 @@ background-image: linear-gradient(
   overflow: hidden;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  background: rgba(59, 6, 69, 0.4);
-  border: 1px solid rgb(246, 34, 246);
-  box-shadow: 0px 0px 20px rgb(203, 7, 213), 0px 0px 20px rgb(102, 0, 128);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-
-  width: 500px;
-}
 
 #titulo {
   margin-top: 10px;
@@ -40,19 +26,38 @@ background-image: linear-gradient(
   color: rgb(242, 147, 244);
   border: 15px solid;
   border-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--isLBn9ec--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://harnerdesigns.com/wp-content/uploads/2018/08/border.svg")
-    50 round;
+  50 round;
   text-shadow: 20px 0px 20px rgb(253, 81, 242), 0 0 20px rgb(255, 0, 238);
 }
 span {
   color: rgb(224, 22, 255);
   text-shadow: 20px 0px 20px rgb(254, 7, 217), 0 0 20px rgb(248, 13, 224);
 }
-#Game .cell {
-  width: 90px;
-  height: 90px;
+.container {
+  width: 80vmin;
+  min-height: 80vmin;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  background: rgba(59, 6, 69, 0.4);
+  border: 1px solid rgb(246, 34, 246);
+  box-shadow: 0px 0px 20px rgb(203, 7, 213), 0px 0px 20px rgb(102, 0, 128);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+#Game {
+  display: flex;
+  flex-wrap: wrap;
+  width: 276px;
+  text-align: center;
+}
+.cell {
+  width: 22vmin;
+  height: 22vmin;
   font-size: 2rem;
-  display: grid;
-  margin: auto;
   place-items: center;
   background: rgba(59, 6, 69, 0.4);
   border: 1px solid rgb(246, 34, 246);
@@ -64,11 +69,6 @@ span {
   color: rgb(250, 111, 197);
   text-shadow: 0px 0px 20px rgb(242, 7, 254), 0 0 20px rgb(255, 0, 0);
   align-content: center;
-}
-
-#Game {
-  width: 276px;
-  text-align: center;
 }
 #Turns {
   color: aliceblue;
@@ -83,7 +83,7 @@ span {
 }
 button {
   color: aliceblue;
-  margin-top: 145px;
+  
   margin-bottom: 25px;
   text-align: center;
   font-size: 4vmin;

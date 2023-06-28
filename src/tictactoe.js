@@ -1,15 +1,14 @@
 let cells = document.getElementsByClassName("cell");
 
-let movesAvaible = [];
-
 // Funcion jugador
 
 let limite = 9;
-let nuevaLista = [];
+let nuevaLista = ["", "", "", "", "", "", "", "", ""];
 for (let i = 0; i < limite; i++) {
-  let ramdomC = Math.floor(Math.random() * limite);
-  nuevaLista = cells[i].filter(" ");
   cells[i].addEventListener("click", function () {
+    let filtro = nuevaLista.filter((vacío) => vacío.length < 1);
+    let espacios = filtro;
+    let ramdomC = Math.floor(Math.random() * limite);
     console.log(cells[i]);
 
     cells[i].innerHTML = "🐱";
@@ -75,4 +74,3 @@ function showWinner(player) {
 function Reset() {
   location.reload();
 }
-function Stopgame(game) {}
