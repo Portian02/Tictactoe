@@ -32,13 +32,11 @@ h3 {
   display: none;
 }
 #titulo {
-  margin-top: 10px;
-  margin-bottom: 25px;
-  font-size: 6vh;
+  /* margin-top: 10px;
+  margin-bottom: 25px; */
+  font-size: 4vh;
+  text-decoration: dotted;
   color: rgb(242, 147, 244);
-  border: 15px solid;
-  border-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--isLBn9ec--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://harnerdesigns.com/wp-content/uploads/2018/08/border.svg")
-    50 round;
   text-shadow: 20px 0px 20px rgb(253, 81, 242), 0 0 20px rgb(255, 0, 238);
 }
 span {
@@ -46,6 +44,8 @@ span {
   text-shadow: 20px 0px 20px rgb(254, 7, 217), 0 0 20px rgb(248, 13, 224);
 }
 .container {
+  width: 77vw;
+  height: 60vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -64,7 +64,7 @@ span {
   grid-template-columns: repeat(3,1fr);
 }
 .cell {
-  width: 18vw;
+  width: 22vw;
   height: 16vh;
   font-size: 2rem;
   place-items: center;
