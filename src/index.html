@@ -13,11 +13,20 @@
     />
   </head>
   <body>
-    <h2 id="titulo">Tic <span>Tac</span> Toe</h2>
+    <div class="players">
+      <h3 id="TurnsX">ES TURNO DE :🐱</h3>
+    </div>
+    <h2 id="titulo">Tic-<span>Tac</span>-Toe</h2>
     <h2 id="Resultado"></h2>
+    <div class="emeregente">
+      <p id="mensaje">Presiona para volver a jugar</p>
+
+      <br />
+      <img id="Gane" src="../src/img/gane.png" alt="" />
+      <button id="Nuevo-juego"></button>
+    </div>
     <div class="container">
       <div id="Game">
-        <br /><br />
         <div class="cell 0"></div>
         <div class="cell 1"></div>
         <div class="cell 2"></div>
@@ -27,12 +36,12 @@
         <div class="cell 6"></div>
         <div class="cell 7"></div>
         <div class="cell 8"></div>
-        <div class="BtnReset">
-          <button onclick="Reset()">Reiniciar</button>
-        </div>
+      </div>
+
+      <div class="BtnReset">
+        <button onclick="Reset()">Reiniciar</button>
       </div>
     </div>
-    <h3 id="Turns"></h3>
 
     <script src="tictactoe.js"></script>
   </body>
