@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   height: 100vh;
-background-image: linear-gradient(
+  background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.564)
@@ -10,23 +10,21 @@ background-image: linear-gradient(
   background-repeat: repeat;
   background-size: cover;
 
- 
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Press Start 2P", cursive;
   margin: 0;
   display: grid;
   place-items: center;
   overflow: hidden;
 }
 
-
 #titulo {
   margin-top: 10px;
   margin-bottom: 25px;
-  font-size: 8vh;
+  font-size: 6vh;
   color: rgb(242, 147, 244);
   border: 15px solid;
   border-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--isLBn9ec--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://harnerdesigns.com/wp-content/uploads/2018/08/border.svg")
-  50 round;
+    50 round;
   text-shadow: 20px 0px 20px rgb(253, 81, 242), 0 0 20px rgb(255, 0, 238);
 }
 span {
@@ -34,10 +32,11 @@ span {
   text-shadow: 20px 0px 20px rgb(254, 7, 217), 0 0 20px rgb(248, 13, 224);
 }
 .container {
-  width: 80vmin;
-  min-height: 80vmin;
+  width: 77vmin;
+  height: 77vmin;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   align-items: center;
   background: rgba(59, 6, 69, 0.4);
@@ -55,10 +54,12 @@ span {
   text-align: center;
 }
 .cell {
-  width: 22vmin;
-  height: 22vmin;
+  width: 18VW;
+  height: 16VH;
   font-size: 2rem;
   place-items: center;
+  display: flex;
+  justify-content: center;
   background: rgba(59, 6, 69, 0.4);
   border: 1px solid rgb(246, 34, 246);
   box-shadow: 0px 0px 20px rgb(203, 7, 213), 0px 0px 20px rgb(102, 0, 128);
@@ -69,6 +70,7 @@ span {
   color: rgb(250, 111, 197);
   text-shadow: 0px 0px 20px rgb(242, 7, 254), 0 0 20px rgb(255, 0, 0);
   align-content: center;
+
 }
 #Turns {
   color: aliceblue;
@@ -83,8 +85,7 @@ span {
 }
 button {
   color: aliceblue;
-  
-  margin-bottom: 25px;
+  margin-top: 25PX;
   text-align: center;
   font-size: 4vmin;
   background: rgba(191, 17, 230, 0.484);
