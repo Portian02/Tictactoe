@@ -61,11 +61,8 @@ function checkLine(c1, c2, c3) {
   if (
     cells[c1].innerHTML.length &&
     cells[c1].innerHTML === cells[c2].innerHTML &&
-    cells[c2].innerHTML === cells[c3].innerHTML,
-    console.log("AWDAWD", cells[c1].innerHTML.length )
+    cells[c2].innerHTML === cells[c3].innerHTML
   ) {
-
-
     showWinner(cells[c1].innerHTML);
   }
 }
@@ -74,10 +71,7 @@ function endGame() {}
 
 // FUNCIÓN MOSTRAR GANADOR
 function showWinner(player) {
- 
-console.log("ganador",player)
-
-  document.querySelector("#Resultado").innerHTML =  player +" "+"Winner!!!";
+  document.querySelector("#Resultado").innerHTML = player + " " + "Winner!!!";
   ocultarTablero();
 }
 
