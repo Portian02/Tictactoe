@@ -9,33 +9,31 @@ body {
     url("https://rare-gallery.com/thumbs/385258-4k-wallpaper.jpg");
   background-repeat: repeat;
   background-size: cover;
-
   font-family: "Press Start 2P", cursive;
   margin: 0;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
   overflow: hidden;
 }
+
 h3 {
   margin-top: 10px;
   margin-bottom: 25px;
-  font-size: 3vh;
+  font-size: 2vh;
   color: rgb(242, 147, 244);
-  border: 3px solid;
-
   text-shadow: 20px 0px 20px rgb(253, 81, 242), 0 0 20px rgb(255, 0, 238);
 }
 #TurnsX {
-  display: block;
+  margin-top: 50px;
 }
 #TurnsO {
   display: none;
 }
 #titulo {
-  /* margin-top: 10px;
-  margin-bottom: 25px; */
-  font-size: 4vh;
-  text-decoration: dotted;
+  margin-top: 50px;
+  font-size: 6vmin;
+  text-decoration: underline;
   color: rgb(242, 147, 244);
   text-shadow: 20px 0px 20px rgb(253, 81, 242), 0 0 20px rgb(255, 0, 238);
 }
@@ -44,8 +42,9 @@ span {
   text-shadow: 20px 0px 20px rgb(254, 7, 217), 0 0 20px rgb(248, 13, 224);
 }
 .container {
-  width: 77vw;
+  width: 90vw;
   height: 60vh;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,10 +60,11 @@ span {
 
 #Game {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 15px;
 }
 .cell {
-  width: 22vw;
+  width: 25vw;
   height: 16vh;
   font-size: 2rem;
   place-items: center;
@@ -87,17 +87,18 @@ span {
   margin-top: -150px;
 }
 #Resultado {
-  margin: 0;
+  margin-top: -70px;
   height: 3rem;
   color: aliceblue;
   font-size: 6vmin;
+  text-align: center;
 }
-button {
+.BtnReset {
   color: aliceblue;
-  margin-top: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 4vmin;
-  background: rgba(191, 17, 230, 0.484);
   width: 20vw;
   height: 6vh;
   box-shadow: 0 8px 32px 0 rgba(241, 22, 219, 0.37);
@@ -105,14 +106,145 @@ button {
   -webkit-backdrop-filter: blur(0.5px);
   border-radius: 10px;
   border: 1px solid rgba(235, 17, 242, 0.18);
+  background: rgb(189, 189, 189);
+  background: linear-gradient(
+    90deg,
+    rgb(218, 98, 239) 0%,
+    rgb(176, 24, 164) 0%,
+    rgb(174, 16, 202) 48%,
+    rgb(167, 8, 159) 100%
+  );
+  background-size: 300% 100%;
+  animation: gradient 15s ease infinite;
 }
-.emeregente {
-  display: none;
 
+@keyframes button {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* funcion emergente  */
+.emergente {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
   color: aliceblue;
+}
+.emergente.hide {
+  display: none;
+}
+#Nuevo-juego {
+  font-size: 4vmin;
+  margin-right: -200px;
+  color: aliceblue;
+  width: 20vw;
+  height: 6vh;
+  box-shadow: 0 8px 32px 0 rgba(241, 22, 219, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(235, 17, 242, 0.18);
+  background: rgb(189, 189, 189);
+  background: linear-gradient(
+    90deg,
+    rgb(218, 98, 239) 0%,
+    rgb(176, 24, 164) 0%,
+    rgb(174, 16, 202) 48%,
+    rgb(167, 8, 159) 100%
+  );
+  background-size: 300% 100%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes Nuevo-juego {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #Gane {
-  width: 20vw;
-  height: 20vh;
+  width: 45vw;
+  height: 45vh;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 77vw;
+    height: 77vh;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: rgba(59, 6, 69, 0.4);
+    border: 1px solid rgb(246, 34, 246);
+    box-shadow: 0px 0px 20px rgb(203, 7, 213), 0px 0px 20px rgb(102, 0, 128);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+  }
+
+  #Game {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cell {
+    width: 20vw;
+    height: 18vh;
+    font-size: 3rem;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    background: rgba(59, 6, 69, 0.4);
+    border: 1px solid rgb(246, 34, 246);
+    box-shadow: 0px 0px 20px rgb(203, 7, 213), 0px 0px 20px rgb(102, 0, 128);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    float: left;
+    color: rgb(250, 111, 197);
+    text-shadow: 0px 0px 20px rgb(242, 7, 254), 0 0 20px rgb(255, 0, 0);
+    align-content: center;
+  }
+  .players {
+    margin-bottom: -155px;
+    margin-left: -300px;
+  }
+  #Resultado {
+    margin-bottom: -90px;
+    height: 1.5rem;
+    color: aliceblue;
+    font-size: 4vmin;
+    text-align: center;
+    margin-right: -300px;
+  }
+  .BtnReset {
+    color: aliceblue;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 4vmin;
+    background: rgba(191, 17, 230, 0.484);
+    width: 20vw;
+    height: 6vh;
+    box-shadow: 0 8px 32px 0 rgba(241, 22, 219, 0.37);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(235, 17, 242, 0.18);
+  }
 }
