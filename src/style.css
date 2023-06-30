@@ -26,6 +26,7 @@ h3 {
 }
 #TurnsX {
   margin-top: 50px;
+  display: none;
 }
 #TurnsO {
   display: none;
@@ -85,6 +86,7 @@ span {
   color: aliceblue;
   margin-right: -400px;
   margin-top: -150px;
+  display: none;
 }
 #Resultado {
   margin-top: -70px;
